@@ -1,0 +1,9 @@
+node_modules/
+
+.DS_Store
+.vscode
+.migrate
+
+.nyc_output
+coverage
+.nvmrc
