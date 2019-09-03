@@ -9,11 +9,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-  if (req.body.name === undefined)
+  if (req.body.name === '')
   {
     res.sendStatus(401);
     res.send('Faltou o name');
-  } else {
+  } else { 
     users.push(req.body);
     res.sendStatus(201);
     res.send();
