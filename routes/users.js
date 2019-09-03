@@ -13,9 +13,11 @@ router.post('/', function(req, res, next) {
   {
     res.sendStatus(401);
     res.send('Faltou o name');
+  } else {
+    users.push(req.body);
+    res.sendStatus(201);
+    res.send();
   }
-  users.push(req.body);
-  res.send();
 });
 
 module.exports = router;
